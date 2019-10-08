@@ -1,0 +1,30 @@
+/*
+* Import CSS Variables
+*/
+@import '../../_variables.scss';
+
+
+input[type=number].number-input{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .3s;
+    color: #fff;
+    width:30px;
+    height:30px;
+    border:none;
+    margin:0px 6px;
+    /*box-shadow: 1px 3px 5px rgba(0,0,0,.5);*/
+    background: $primary_color;
+    &:hover {
+        background: darken($primary_color, 10%);
+    }
+    &::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button {
+        -moz-appearance:textfield;
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+}
